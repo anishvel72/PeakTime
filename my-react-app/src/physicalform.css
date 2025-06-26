@@ -1,0 +1,106 @@
+.physical-background {
+    background-image: url("./assets/mountain-top.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 10vh 10vw 10vh 10vw;
+}
+
+.physical-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #c8d1da;
+    align-items: center;
+    justify-items: center;
+    border-radius: 25px;
+    height: 80vh;
+}
+
+.physical-title-container {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    align-self:flex-end;
+    margin-bottom: 5vh;
+
+}
+
+.physical-container > h3 {
+    color: #183227;
+}
+
+.physical-title {
+    font-size: 4vw;
+    color: #183227;
+}
+
+.physical-info-icon {
+    margin: 0;
+    align-self: flex-start;
+    width: 2vw;
+    height: 2vw;
+}
+
+.physical-slider-container {
+    align-self: center;
+    justify-items: center;
+}
+
+.physical-slider {
+    width: 50vw;
+
+}
+
+.physical-slider-labels {
+    display: flex;
+    flex-direction: row;
+    width: 51vw;
+    justify-content: space-between;
+
+}
+
+.physical-slider-labels > p {
+    font-size: 1.5vw;
+    color: #183227;
+}
+
+.physical-button-container {
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.physical-skip {
+    margin-right: 5vw;
+    width: 12vw;
+    height: 6vh;
+    font-size: 3vh;
+    border-radius: 15px;
+    background-color: #8b9b74;
+    color: whitesmoke;
+    
+}
+
+.physical-next {
+    margin-left: 5vw;
+    width: 12vw;
+    height: 6vh;
+    font-size: 3vh;
+    border-radius: 15px;
+    background-color: #354952;
+    color: whitesmoke;
+}
+
+.physical-skip:hover {
+    background-color: whitesmoke;
+    color: #183227;
+    border-color: #8b9b74;
+}
+
+.physical-next:hover {
+    background-color: whitesmoke;
+    color: #183227;
+    border-color: #354952;
+}

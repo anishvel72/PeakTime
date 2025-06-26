@@ -1,37 +1,27 @@
-import "./app.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-function App() {
+import Welcome from './Welcome.jsx'
+import SleepForm from './SleepForm.jsx'
+import Home from './Home.jsx'
+import Login from './Login.jsx'
+import PhysicalForm from './PhysicalForm.jsx'
+import CaffForm from './CaffForm.jsx'
+import StressForm from './StressForm.jsx'
 
-  return (
-    <body className="background">
-
-      <div className="container">
-
-        <h1 className="title">Welcome!</h1>
-
-        <div>Amount of sleep:</div>
-        <input type="number" placeholder="Enter sleep in hours"/>
-
-        <div>Stress level:</div>
-        <input type="range"></input>
-
-        <div>Caffienated drinks:</div>
-        <select>
-          <option>Coffee</option>
-          <option>Tea</option>
-          <option>Coke</option>
-        </select>
-
-        <div>Physical activity:</div>
-        <input type="range"/>
-
-        <div>Time since last meal:</div>
-        <input type="number" placeholder="Enter approximate minutes"/>
-
-      </div>
-    </body>
-  )
-  
+function App () {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Welcome/>}/>
+                <Route path="/home" element={<Home/>}/>
+                <Route path="/sleepform" element={<SleepForm/>}/>
+                <Route path="/physicalform" element={<PhysicalForm/>}/>
+                <Route path="/caffform" element={<CaffForm/>}/>
+                <Route path="/stressform" element={<StressForm/>}/>
+                <Route path="/login" element={<Login/>}/>
+            </Routes>
+        </Router>
+    )
 }
 
 export default App

@@ -1,0 +1,69 @@
+.welcome-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    height: 90vh;
+}
+
+.logo {
+    background-image: url("./assets/evangelion-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+.title {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.login {
+    font-size: 2em;
+    background-color: #D9D9D9;
+    height: 2.5em;
+    width: 5em;
+    align-self: center;
+    justify-self: right;
+    border-radius: 20px;
+    margin-right: .5em;
+    
+}
+
+.login:hover {
+    background-color: white;
+    border-color: #D9D9D9;
+}
+
+.signup {
+    font-size: 2em;
+    color: white;
+    height: 2.5em;
+    width: 5em;
+    align-self: center;
+    justify-self: center;
+    background-color: #3C6E71;
+    border-radius: 20px;
+
+}
+
+.signup:hover {
+    color: black;
+    background-color: white;
+    border-color: #3C6E71;
+}
+
+iframe {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    align-self: center;
+    width: 50vw;
+    height: 50vh;
+}
+
